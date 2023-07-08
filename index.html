@@ -1,59 +1,51 @@
+
 <html>
+
     <head>
-        <title>Console</title>
-
-        <script>
-            console.log("My first console project");
-
-            var firstname = "Ranbir";
-            var secondname = "Kapoor";
-
-            console.log(firstname.concat(secondname));
-
-            var firstnumber = 10;
-            var secnumber = 5;
-
-            console.log(firstnumber + secnumber);
-            console.log(firstnumber - secnumber);
-
-            console.log(firstnumber * 5);
-            console.log(firstnumber/5);
-        </script>
-
-        <style>
-            p{
-                font-size: 25px;
-            }
-
-            li{
-                font-size: 20px;
-            }
-        </style>
+        <title>My Selfie App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <link href="style.css" rel="stylesheet">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+    
     </head>
-
+    
     <body>
         <center>
-       <h1 style="text-decoration: underline";>Projects on Console</h1>
-       </center>
-        <p>Visual Studio empowers you to complete the entire development cycle in one place. For example, you can edit, debug, test, version control, and deploy to the cloud. With the diversity of features and languages in Visual Studio, you can grow from writing your first piece of code to developing in multiple project types.</p>
-
-        <p>How to set up Visual Studio: </p>
-            <ol>
-                <li>Make sure your computer is ready for Visual Studio.</li>
-                <li>Download Visual Studio.</li>
-                <li>Install the Visual Studio Installer.</li>
-            </ol>
+            <a id="link" href=""></a>
+            <h1>Collage Web App </h1>
+            <hr>
+            <h4>Please press allow as soon as popup comes. After you give a voice command</h4>
     
-
-            <p>In computer technology, a console can mean different things depending on the context. It usually means a combination of a display monitor and an input device, usually a keyboard and mouse pair, which allows a user to input commands and receive visual output from a computer or computer system.</p>
-
-            <p>To Open the console. You can do it in 2 different ways. </p>
-            <ul>
-                <li>Press Control, Shift and I</li>
-                <li>Right Click and Click on Inspect</li>
-            </ul>
-
-            <p>To print something in console screen, You need a .js file. In the Javascript, you can type the following: console.log("Anyting you want here")</p>
+            <h3>Say "selfie" for Taking your selfie to make a Collage</h3>
     
-        </body>
-</html>
+            <button class="btn btn-lg btn-primary" onclick="start()">Start</button>
+            <h4>Press the Start button</h4>
+    
+            <label>Your webcam : </label>
+            <div id="camera"></div>
+    
+            <br>
+    
+            <label>Your selife Will Display Here: </label>
+            <br>
+            <div id="resultRow">
+                <div id="result1" class="column">
+                    <img width="30%" src="https://unsplash.com/photos/F3Dde_9thd8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzOTUxMTU0&force=true">
+                </div>
+                <Br>
+                <div id="result2" class="column">
+                    <img width="30%" src="https://unsplash.com/photos/N10auyEVst8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzOTUxMjA2&force=true">
+                </div>
+            </div>
+        </center>
+    
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
+    
