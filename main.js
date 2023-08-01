@@ -1,6 +1,8 @@
 var SpeechRecognition = window.webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
 
+camera = document.getElementById("camera");
+
 function start()
 {
     recognition.start();
@@ -41,7 +43,6 @@ function speak()
     setTimeout(function() {take_snapshot("result2"); save();}, 10000);
 }
 
-camera = document.getElementById("camera");
 
 Webcam.set({
     width: 360,
